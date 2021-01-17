@@ -5,7 +5,7 @@
   "main": "index.js",
   "typings": "types.d.ts",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/stephanrotolante"
   },
   "repository": {
     "type": "git",
