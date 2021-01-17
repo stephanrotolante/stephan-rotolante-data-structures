@@ -1,0 +1,25 @@
+{
+  "name": "stephan-rotolante-data-structures",
+  "version": "1.0.0",
+  "description": "Mono Repo for data structures",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "publish": "lerna publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanrotolante/stephan-rotolante-data-structures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephanrotolante/stephan-rotolante-data-structures/issues"
+  },
+  "homepage": "https://github.com/stephanrotolante/stephan-rotolante-data-structures#readme",
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "typecript": "^0.0.1-security"
+  }
+}
