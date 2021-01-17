@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "tsc -w",
-    "publish": "lerna publish",
+    "publish": "lerna version --yes",
     "build": "tsc"
   },
   "repository": {
