@@ -1,5 +1,5 @@
 {
-  "name": "@stephan-rotolante-data-structures/repo",
+  "name": "stephan-rotolante-data-structures",
   "version": "1.0.0",
   "description": "Mono Repo for data structures",
   "main": "index.js",

@@ -6,7 +6,7 @@
   "typings": "types.d.ts",
   "publishConfig": {
     "access": "restricted",
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/stephanrotolante"
   },
   "repository": {
     "type": "git",
