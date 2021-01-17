@@ -1,3 +1,3 @@
 export function myFunction(value: string): string;
 export function myFunction2(value: string): string;
-export function myFunction2(value: string): string;
+export function myFunction3(value: string): string;
