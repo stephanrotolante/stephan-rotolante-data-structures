@@ -5,6 +5,9 @@ var myFunction = function (value) {
 var myFunction2 = function (value) {
     return value || "default value";
 };
+var myFunction3 = function (value) {
+    return value || "default value";
+};
 module.exports = {
     myFunction: myFunction,
 };
