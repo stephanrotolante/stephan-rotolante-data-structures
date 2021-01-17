@@ -1,15 +1,16 @@
 {
-  "name": "@stephan-rotolante-data-structures/linked-list",
-  "version": "1.0.3",
+  "name": "@stephanrotolante/linked-list",
+  "version": "1.0.0",
   "description": "Linked List Data Structure",
   "main": "index.js",
   "typings": "types.d.ts",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stephanrotolante/stephan-rotolante-data-structures.git"
+    "url": "git+https://github.com/stephanrotolante/stephan-rotolante-data-structures.git"
+  },
+  "author": {
+    "name": "Stephan Rotolante",
+    "email": "stephanrotolante@gmail.com"
   },
   "gitHead": "cfe75b459a9d947e0b9cc9a94f72d8d2d67979c6"
 }
