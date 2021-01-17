@@ -11,13 +11,11 @@ jobs:
     name: Build/Deploy
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.token }}
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      # - run: git config --global user.email ${{ secrets.GH_EMAIL }}
-      # - run: git config --global user.name ${{ secrets.GH_USER }}
+      - run: git config --global user.email ${{ secrets.GH_EMAIL }}
+      - run: git config --global user.name ${{ secrets.GH_USER }}
       - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.TOKEN }}" >> ~/.npmrc
       - run: npm install
       - run: npm run build
