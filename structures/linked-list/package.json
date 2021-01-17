@@ -4,9 +4,6 @@
   "description": "Linked List Data Structure",
   "main": "index.js",
   "typings": "types.d.ts",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/stephanrotolante"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/stephanrotolante/stephan-rotolante-data-structures.git"
