@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/stephanrotolante/stephan-rotolante-data-structures/compare/@stephan-rotolante-data-structures/linked-list@1.1.12...@stephan-rotolante-data-structures/linked-list@1.0.1) (2021-01-17)
+
+**Note:** Version bump only for package @stephan-rotolante-data-structures/linked-list
+
+
+
+
+
 ## [1.1.12](https://github.com/stephanrotolante/stephan-rotolante-data-structures/compare/@stephan-rotolante-data-structures/linked-list@1.1.11...@stephan-rotolante-data-structures/linked-list@1.1.12) (2021-01-17)
 
 **Note:** Version bump only for package @stephan-rotolante-data-structures/linked-list
