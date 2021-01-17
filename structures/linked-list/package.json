@@ -6,11 +6,11 @@
   "typings": "types.d.ts",
   "publishConfig": {
     "access": "restricted",
-    "registry": "https://npm.pkg.github.com/stephanrotolante"
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/stephanrotolante/stephan-rotolante-data-structures.gitt"
   },
-  "gitHead": "a18098344831e51e7c3fec3d99c84df62eca3d81"
+  "gitHead": "b89742a599a92b06c3039ec50fb5d2bef3e83aa3"
 }
