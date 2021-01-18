@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "watch": "tsc -w",
-    "publish": "lerna publish --yes",
-    "build": "tsc"
+    "publish": "lerna run package:install && lerna run test && lerna publish --yes",
+    "build": "tsc",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
   },
   "homepage": "https://github.com/stephanrotolante/stephan-rotolante-data-structures#readme",
   "devDependencies": {
+    "@types/jest": "^26.0.20",
     "lerna": "^3.22.1",
-    "typecript": "^0.0.1-security"
+    "typescript": "^4.1.3"
   }
 }
