@@ -1,4 +1,4 @@
-declare class SinglyLinkedList<T> {
+declare class SinglyLinkedList<T = any> {
   constructor();
   public addNode(data: T): this;
   public addMany(data: T[]): this;
