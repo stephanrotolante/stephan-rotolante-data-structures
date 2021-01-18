@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "tsc -w",
-    "publish": "lerna run package:install && lerna run test && npm run add && npm run commit && lerna publish --yes",
+    "publish": "lerna run package:install && lerna run test && npm run add && npm run commit || echo \"Nothing to commit\" && lerna publish --yes",
     "add": "git add .",
     "commit": "git commit -m \"add package-lock.json\"",
     "build": "tsc",
