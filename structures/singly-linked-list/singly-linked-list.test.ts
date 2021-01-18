@@ -5,7 +5,7 @@ describe("Singly Linked List", () => {
     singlyLinkedList = new SinglyLinkedList<{ num: number }>();
   });
   it("Add Node", () => {
-    singlyLinkedList.addNode({ num: 1 });
+    singlyLinkedList.addNode({ num: 2 });
 
     expect(singlyLinkedList.getSize()).toEqual(1);
     expect(singlyLinkedList.toArray()).toEqual([{ num: 2 }]);
