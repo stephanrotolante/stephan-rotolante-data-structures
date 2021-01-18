@@ -1,12 +1,12 @@
 {
   "name": "@stephanrotolante/linked-list",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Linked List Data Structure",
   "main": "index.js",
   "typings": "types.d.ts",
   "scripts": {
-    "package:install": "npm i ",
-    "test": "jest && "
+    "package:install": "npm i",
+    "test": "jest"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
