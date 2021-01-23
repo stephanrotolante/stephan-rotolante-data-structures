@@ -49,6 +49,67 @@ export default class SinglyLinkedList<T = any> {
     return (this.size += 1);
   }
 
+  public clearList(): void {
+    this.first = this.last = null;
+    this.size = 0;
+  }
+
+  public removeAtIndex(index: number): T | null {
+    if (index > this.size - 1) return null;
+
+    let currentNode = this.first;
+
+    if (index === 0) {
+      this.first = this.first?.next || null;
+
+      if (index === this.size - 1) this.last = null;
+      return currentNode?.data || null;
+    }
+
+    let count = 0;
+    let prev: LinkedListNode<T> | null = this.first;
+    while (count <= this.size - 1 && index !== count) {
+      if (currentNode) {
+        if (count == index - 1) {
+          currentNode && (prev = currentNode);
+        }
+        currentNode = currentNode.next;
+
+        count += 1;
+      }
+    }
+
+    if (count === this.size - 1) {
+      this.last = prev || null;
+    }
+    prev && ((prev as any).next = currentNode?.next);
+    return currentNode?.data as T;
+  }
+
+  public addNodeFront(data: T): this {
+    const newNode = new LinkedListNode<T>(data);
+
+    if (!this.size) {
+      this.first = this.last = newNode;
+      this.incrementSize();
+      return this;
+    }
+
+    newNode.next = this.first;
+
+    this.first = newNode;
+    this.incrementSize();
+    return this;
+  }
+
+  public addManyFront(data: T[]): this {
+    for (const newNode of data) {
+      this.addNodeFront(newNode);
+    }
+
+    return this;
+  }
+
   public removeLastNode(): T | null {
     let currentNode = this.first;
     let temp: T;
