@@ -317,4 +317,30 @@ describe("Singly Linked List", () => {
     expect(singlyLinkedList.getLast()).toEqual({ num: 2 });
     expect(singlyLinkedList.toArray()).toEqual([{ num: 5 }, { num: 2 }]);
   });
+
+  it("reverse list", () => {
+    singlyLinkedList.addMany([
+      { num: 1 },
+      { num: 2 },
+      { num: 3 },
+      { num: 4 },
+      { num: 5 },
+      { num: 6 },
+      { num: 7 },
+    ]);
+
+    singlyLinkedList.reverseList();
+
+    expect(singlyLinkedList.getFirst()).toEqual({ num: 7 });
+    expect(singlyLinkedList.getLast()).toEqual({ num: 1 });
+    expect(singlyLinkedList.toArray()).toEqual([
+      { num: 7 },
+      { num: 6 },
+      { num: 5 },
+      { num: 4 },
+      { num: 3 },
+      { num: 2 },
+      { num: 1 },
+    ]);
+  });
 });

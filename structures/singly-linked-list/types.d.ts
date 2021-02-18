@@ -2,6 +2,11 @@ declare class SinglyLinkedList<T = any> {
   constructor();
   /**
    *
+   *
+   */
+  public clearList(): void;
+  /**
+   *
    * @param data
    */
   public addNode(data: T): this;
@@ -59,6 +64,11 @@ declare class SinglyLinkedList<T = any> {
    * @param callBack
    */
   public filterList(callBack: (data: T) => boolean): this;
+
+  /**
+   *
+   */
+  public reverseList(): void;
 }
 
 export = SinglyLinkedList;

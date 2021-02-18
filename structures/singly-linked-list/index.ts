@@ -54,6 +54,35 @@ export default class SinglyLinkedList<T = any> {
     this.size = 0;
   }
 
+  public reverseList(): void {
+    if (this.getSize() === 0 || this.getSize() === 1) {
+      return;
+    }
+
+    let current = this.first;
+    let prev = null;
+    let next = current?.next;
+
+    this.last = current;
+
+    while (next !== null) {
+      if (current) {
+        current.next = prev;
+      }
+
+      prev = current;
+
+      current = next || null;
+      next = current?.next || null;
+    }
+
+    if (current) {
+      current.next = prev;
+    }
+
+    this.first = current;
+  }
+
   public removeAtIndex(index: number): T | null {
     if (index > this.size - 1) return null;
 
